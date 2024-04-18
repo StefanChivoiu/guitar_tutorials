@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guitar Tutorials</title>
+  <link rel="stylesheet" href="Styles/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="banner">
+    <div class="banner-title">
+      <h1>Guitar Tutorials</h1>
+      <p>“Music doesn’t lie. If there is something to be changed in this world, then it can only happen through music.”
+        – Jimi Hendrix.</p>
+      <div class="banner-button">
+        <a href="#Info"><span></span> Read More </a>
+
+      </div>
+  </section>
+  <section>
+    <div id="sideN">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Html/ginfo.html">GUITAR INFORMATIONS</a></li>
+          <li><a href="Html/gsetup.html">GUITAR SETUP</a></li>
+          <li><a href="Html/gex.html">EXERCISES</a></li>
+          <li><a href="Html/gtut.html">TUTORIALS</a></li>
+          <li><a href="Html/groutine.html">ROUTINE</a></li>
+          <li><a href="Html/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuB">
+      <img src="images/menuicon.png" id="menu">
+    </div>
+    <!--Info-->
+    <section id="Info">
+      <div class="title-text">
+        <p>More About Me</p>
+        <h1>Who am I?</h1>
+      </div>
+      <div class="info-box">
+        <div class="info">
+          <p>I am a self-taught passionate guitar player,who loves playing 
+            any kind of music in general. </p>
+          <h1>
+            What is the purpose of this website ?
+          </h1>
+          <p>This website was created with the objective to teach new guitar players where to start up 
+            and maybe convince other people to pick up the guitar.
+          </p>
+          <h1>
+           What will you find on this website ?
+          </h1>
+          <p>
+            In this website you will find the followings:
+          </p>
+        </div>
+        <ul type=".">
+          <li>Guitar informations in general</li>
+          <li>How to setup a guitar</li>
+          <li>Some song tutorials for begginers</li>
+          <li>Some guitar exercises and techniques</li>
+          <li>How and why is important to make your own guitar practice roitine</li>
+        </ul>
+
+
+      </div>
+    </section>
+    </section>
+    <script>
+      var menuB = document.getElementById("menuB")
+      var sideN = document.getElementById("sideN")
+      var menu = document.getElementById("menu")
+      var open=false;
+      sideN.style.clipPath="circle(20px at 150px 45px)"
+      menuB.onclick = function () {
+        if (open==false) {
+          sideN.style.clipPath="circle(100%)"
+          menu.src = "images/close.png";
+          open=true;
+        }
+        else {
+          sideN.style.clipPath="circle(20px at 150px 45px)"
+          open=false;
+          menu.src = "images/menuicon.png";
+        }
+  
+      }
+    </script>
+  
+
+  </section>
+</body>
+<footer>
+  <div class="footer-content">
+    <h3>Guitar Tutorials</h3>
+    <p>This website was made with the intent to help new guitar players.</p>
+    <ul class="socials">
+      <li><a href="Html/contact.html"> <img src="images/facebook.png" width="60" height="60"> <i class="fa fa-facebook"></i></a></li>
+      <li><a href="Html/contact.html"> <img src="images/email.png" width="60" height="60"> <i class="fa mail"></i></a></li>
+      <li><a href="html/contact.html"> <img src="images/instagram.png" width="60" height="60"> <i class="fa instagram"></i></a></li>
+   </ul>
+</div>
+</footer>
+
+</html>
